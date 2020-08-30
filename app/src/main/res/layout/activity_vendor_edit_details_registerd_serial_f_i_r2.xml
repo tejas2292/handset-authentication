@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorEditDetailsRegisterdSerialFIR2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/edit_text_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="5dp"
+                    android:text="Enter FIR No:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_firNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter fir no here"
+                    android:inputType="textCapCharacters"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="5dp"
+                    android:text="Enter Police Station Address:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_policestationaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter police station address here"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/textViewCountImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="Add Photos:\n(you can add upto 5 images only)"
+                    android:textColor="#2196F3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/textViewCountImage"
+                    android:background="#9C9C9C" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/firHide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearMain"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearPhoto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/firimg1"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="5dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/file_upload" />
+
+
+                        <Button
+                            android:id="@+id/btnAddFirImg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button1"
+                            android:text="Select Photo"
+                            android:textAllCaps="false"
+                            android:textColor="#FFF"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnUploadFirImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/r1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button1"
+                    android:text="Upload Photo"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firHide"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button1"
+                android:text="Finish"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

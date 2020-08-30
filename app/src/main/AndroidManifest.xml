@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.demo1">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".VendorEditDetailsRegisterdSerialOwnerNameRecovery"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".VendorEditDetailsRegisterdSerialFIRRecovery"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".VendorDownloadHistoryPoints"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".DealerDownloadHistory"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminDownloadHistory"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminCheckUserVendor3"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoAdmin3"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoPersonal3"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoDealer3"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoVendor4"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoVendor3"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".SearchSerialNoPersonal2" />
+        <activity
+            android:name=".SearchSerialNoPersonal"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminDeductPointsDealer"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminDeductPointsVendor"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminCheckUserVendor2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminHistory1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminSendPointsVendor"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminSendPointsDealer"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminSendPointsOptions"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoAdmin2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoAdmin"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminCheckUserVendor"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdminCheckUser"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".MainActivityAdmin"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".HistoryVendorSerials"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".HistoryVendorPoints1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".HistoryVendorOptions"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".HistoryDealerPoints1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SendPointsToVendor"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoDealer2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoDealer"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".VendorEditDetailsRegisterdSerialFIR2"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:launchMode" />
+        <activity
+            android:name=".VendorEditDetailsRegisterdSerialFIR1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".VendorEditDetailsRegisterdSerialOwnerName2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".VendorEditDetailsRegisterdSerialOwnerName1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".VendorEditDetailsRegisterdSerialMain"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".DeleteMyAccount"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".addBrands"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpPersonal2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpPersonal1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpDealer2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpDealer1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpVendor2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpVendor1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoVendor"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchSerialNoVendor2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".VendorRegisterSerialNo"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".ForgotPassword3Activity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ForgotPassword2Activity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".MainActivityDealer"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".MainActivityPersonal"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpPersonal"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpDealer"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUpByCategory"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".MainActivityVendor"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SignUp"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ContinuousCaptureActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

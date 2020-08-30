@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".VendorEditDetailsRegisterdSerialFIRRecovery">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter OTP"
+        android:inputType="phone"
+        android:maxLength="6"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_toRightOf="@id/tv1"
+            android:paddingRight="15dp"
+            android:text="Resend?"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:onClick="sendToFIR1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send OTP on first no?"
+            android:textSize="18sp"
+            android:layout_gravity="right"
+            android:paddingLeft="15dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_resend"
+        android:layout_margin="15dp"
+        android:background="@drawable/button1"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

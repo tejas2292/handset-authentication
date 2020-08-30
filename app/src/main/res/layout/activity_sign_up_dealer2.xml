@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".SignUpDealer2">
+
+    <EditText
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/et_otp"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter OTP"
+        />
+    <TextView
+        android:id="@+id/tv_resend"
+        android:layout_below="@id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend?"
+        android:textSize="18sp"
+        android:textAlignment="textEnd"
+        android:paddingRight="15dp"/>
+
+
+    <Button
+        android:background="@drawable/button1"
+        android:id="@+id/btn_submit"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:layout_below="@id/tv_resend"
+        />
+
+</LinearLayout>
